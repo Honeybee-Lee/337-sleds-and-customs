@@ -15,6 +15,7 @@ import { useLocation } from "wouter";
 function Router() {
   const [location] = useLocation();
 
+  // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -31,17 +32,14 @@ function Router() {
 }
 
 function App() {
-  const [location] = useLocation();
-  const isHomePage = location === "/";
-
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
         <Navbar />
-        <main className={`flex-grow ${!isHomePage ? 'pt-20' : ''}`}>
+        <main className="flex-grow">
           <Router />
         </main>
-        {!isHomePage && <Footer />}
+        <Footer />
         <Toaster />
       </div>
     </QueryClientProvider>
