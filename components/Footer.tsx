@@ -38,15 +38,15 @@ export function Footer() {
             <ul className="space-y-4 font-mono text-sm text-zinc-400">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
-                <span>123 Industrial Parkway<br />Unit 4B<br />Lafayette, LA 70508</span>
+                <span>200 E North Ave<br />Tonkawa, OK 74653</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>(337) 555-0123</span>
+                <span>(580) 576-0534</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>info@337sleds.com</span>
+                <span>337lee2023@gmail.com</span>
               </li>
             </ul>
           </div>
