@@ -53,7 +53,7 @@ export default function Parts() {
           
           <div className="mt-16">
             <Link href="/services">
-              <Button variant="link" className="text-zinc-500 hover:text-white uppercase font-mono tracking-widest text-xs" data-testid="link-back-services">
+              <Button variant="ghost" className="text-zinc-500 hover:text-white uppercase font-mono tracking-widest text-xs" data-testid="link-back-services">
                 ← Back to Services
               </Button>
             </Link>

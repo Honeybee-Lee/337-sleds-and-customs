@@ -87,7 +87,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-mono font-bold text-white uppercase tracking-wider mb-1">Location</h4>
-                    <p className="text-zinc-400" data-testid="text-address">123 Industrial Parkway, Unit 4B<br />Lafayette, LA 70508</p>
+                    <p className="text-zinc-400" data-testid="text-address">200 E North Ave.<br />Tonkawa, OK 74653</p>
                   </div>
                 </div>
 
@@ -97,7 +97,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-mono font-bold text-white uppercase tracking-wider mb-1">Phone</h4>
-                    <p className="text-zinc-400" data-testid="text-phone">(337) 555-0123</p>
+                    <p className="text-zinc-400" data-testid="text-phone">(580) 576-0534</p>
                   </div>
                 </div>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-mono font-bold text-white uppercase tracking-wider mb-1">Email</h4>
-                    <p className="text-zinc-400" data-testid="text-email">info@337sleds.com</p>
+                    <p className="text-zinc-400" data-testid="text-email">337LEE2023@gmail.com</p>
                   </div>
                 </div>
 
@@ -178,7 +178,7 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-zinc-300">Phone (Optional)</FormLabel>
                         <FormControl>
-                          <Input placeholder="(555) 123-4567" {...field} className="bg-black/50 border-zinc-700 focus:border-primary text-white h-12" data-testid="input-phone" />
+                          <Input placeholder="(123) 456-7890" {...field} className="bg-black/50 border-zinc-700 focus:border-primary text-white h-12" data-testid="input-phone" value={field.value ?? ""}/>
                         </FormControl>
                         <FormMessage />
                       </FormItem>
