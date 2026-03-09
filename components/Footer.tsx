@@ -2,6 +2,7 @@
 
 import { Wrench, Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -10,12 +11,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-primary rounded-lg rotate-3">
-                <Wrench className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <span className="block font-display font-bold text-xl tracking-wider text-white">337 SLEDS</span>
-                <span className="block font-mono text-xs text-primary tracking-[0.2em]">& CUSTOMS</span>
+              <div className="flex items-center space-x-3 mb-6">
+                <Image
+                src="/images/logo.PNG"
+                alt="337 SLEDS & CUSTOMS Logo"
+                width={90}  
+                height={30}  
+                className="object-contain"
+                />
               </div>
             </div>
             <p className="text-zinc-400 max-w-md font-body leading-relaxed">
