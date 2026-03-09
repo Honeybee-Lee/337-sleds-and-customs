@@ -15,8 +15,8 @@ export function Footer() {
                 <Image
                 src="/images/logo.PNG"
                 alt="337 SLEDS & CUSTOMS Logo"
-                width={90}  
-                height={30}  
+                width={120}  
+                height={40}  
                 className="object-contain"
                 />
               </div>

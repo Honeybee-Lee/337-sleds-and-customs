@@ -27,9 +27,9 @@ export function Navbar() {
             <Image
               src="/images/logo.PNG"  
               alt="337 SLEDS & CUSTOMS Logo"
-              width={90}                    
-              height={30}                    
-              className="object-contain"
+              // width={90}                    
+              // height={30}                    
+              className="h-8 w-auto object-contain"
             />
           </Link>
 
