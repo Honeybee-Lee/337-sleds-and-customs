@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"
 import { usePathname } from "next/navigation";
 import { Wrench, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -23,13 +24,13 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="p-2 bg-primary rounded-lg rotate-3 group-hover:rotate-12 transition-transform duration-300">
-              <Wrench className="w-6 h-6 text-black" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-xl tracking-wider leading-none">337 SLEDS</span>
-              <span className="font-mono text-xs text-primary tracking-[0.2em] leading-none">& CUSTOMS</span>
-            </div>
+            <Image
+              src="/images/company-logo.png"  
+              alt="337 SLEDS & CUSTOMS Logo"
+              width={120}                    
+              height={40}                    
+              className="object-contain"
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
