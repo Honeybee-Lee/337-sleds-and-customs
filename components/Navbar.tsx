@@ -25,7 +25,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3 group">
             <Image
-              src="/images/logo.png"  
+              src="/images/logo.PNG"  
               alt="337 SLEDS & CUSTOMS Logo"
               width={120}                    
               height={40}                    
