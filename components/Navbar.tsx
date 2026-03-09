@@ -29,7 +29,7 @@ export function Navbar() {
               alt="337 SLEDS & CUSTOMS Logo"
               width={120}                    
               height={40}                    
-              className="object-contain"
+              className="object-contain border-2 border-red-500"
             />
           </Link>
 
