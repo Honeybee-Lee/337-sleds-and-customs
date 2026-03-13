@@ -21,13 +21,14 @@ const contactSchema = insertMessageSchema.extend({
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(10, "Phone number is too short").optional(),
   content: z.string().min(10, "Message must be at least 10 characters"),
+  company: z.string().optional(), // honeypot
 });
 
 export default function Contact() {
   const { toast } = useToast();
 
   const { mutate, isPending } = useMutation({
-    mutationFn: async (data: InsertMessage) => {
+    mutationFn: async (data: ContactFormValues) => {
       const res = await fetch("/api/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -56,18 +57,18 @@ export default function Contact() {
     },
   });
   
-  const form = useForm<InsertMessage>({
+  const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
       name: "",
       email: "",
       phone: "",
       content: "",
-      company: "", //honeypot
+      company: ""
     },
   });
 
-  function onSubmit(data: InsertMessage) {
+  function onSubmit(data: ContactFormValues) {
     mutate(data);
   }
 
@@ -213,7 +214,7 @@ export default function Contact() {
                   control={form.control}
                   name="company" // honeypot
                   render={({ field }) => (
-                    <FormItem style={{ display: "none" }}>
+                    <FormItem style={{ display: "none" }} aria-hidden="true">
                       <FormControl {...field} />
                     </FormItem>
                   )}
