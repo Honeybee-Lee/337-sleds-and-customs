@@ -204,6 +204,15 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
+                <FormField
+                  control={form.control}
+                  name="company" // honeypot
+                  render={({ field }) => (
+                    <FormItem style={{ display: "none" }}>
+                      <FormControl {...field} />
+                    </FormItem>
+                  )}
+                />
 
                 <Button 
                   type="submit" 

@@ -24,13 +24,14 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3 group">
-            <Image
-              src="/images/logo.PNG"  
-              alt="337 SLEDS & CUSTOMS Logo"
-              // width={90}                    
-              // height={30}                    
-              className="h-12 w-auto object-contain"
-            />
+            <div className="relative h-12 w-48"> {/* parent must have position + dimensions */}
+              <Image
+                src="/images/logo.PNG"
+                alt="337 SLEDS & CUSTOMS Logo"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
