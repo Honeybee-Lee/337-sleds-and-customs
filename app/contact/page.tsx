@@ -13,6 +13,10 @@ import { z } from "zod";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
 
+type ContactFormValues = InsertMessage & {
+  company?: string; // honeypot field
+};
+
 const contactSchema = insertMessageSchema.extend({
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(10, "Phone number is too short").optional(),
@@ -59,6 +63,7 @@ export default function Contact() {
       email: "",
       phone: "",
       content: "",
+      company: "", //honeypot
     },
   });
 
