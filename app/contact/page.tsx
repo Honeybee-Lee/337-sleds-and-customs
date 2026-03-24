@@ -140,7 +140,10 @@ export default function Contact() {
               </div>
             </div>
           </div> */}
-          <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
+
+            {/* SECOND COLUMN START */}
+            <div className="space-y-8">
+              <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
             <img 
               src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1748&auto=format&fit=crop" 
               alt="Map location"
@@ -259,5 +262,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-  );
-}
+    </div>
+    </div>)}
