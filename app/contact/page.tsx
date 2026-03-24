@@ -129,7 +129,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
+            {/* <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
               <img 
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1748&auto=format&fit=crop" 
                 alt="Map location"
@@ -138,6 +138,29 @@ export default function Contact() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <Button variant="secondary" className="shadow-xl" data-testid="button-open-maps">Open in Maps</Button>
               </div>
+            </div>
+          </div> */}
+          <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
+            <img 
+              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1748&auto=format&fit=crop" 
+              alt="Map location"
+              className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500"
+            />
+
+            <div className="absolute inset-0 flex items-center justify-center">
+              <a
+                href="https://www.google.com/maps/place/200+E+North+Ave,+Tonkawa,+OK+74653/@36.6812148,-97.3109495,17z/data=!3m1!4b1!4m6!3m5!1s0x87b0430756798c3d:0xbd8396d78102ee3c!8m2!3d36.6812105!4d-97.3083746!16s%2Fg%2F11mcj2kjwq?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="secondary"
+                  className="shadow-xl"
+                  data-testid="button-open-maps"
+                >
+                  Open in Maps
+                </Button>
+              </a>
             </div>
           </div>
 

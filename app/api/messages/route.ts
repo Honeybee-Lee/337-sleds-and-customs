@@ -30,7 +30,7 @@ export async function POST(req: Request) {
 
     // Send email via Resend
     const response = await resend.emails.send({
-      from: "Contact Form <noreply@337sledsandcustoms.com>", // update to your domain later
+      from: "Contact Form <noreply@337sledsandcustoms.com>", // Make sure this is your domain
       to: contactEmail,
       subject: `New message from ${name}`,
       replyTo: email,
