@@ -44,7 +44,7 @@ ${content}
       `,
     });
 
-    console.log("Resend response:", response); // ✅ log for debugging
+    console.log("Resend response:", response); // log for debugging
 
     return NextResponse.json({ success: true, id: response.data?.id });
   } catch (error: any) {
