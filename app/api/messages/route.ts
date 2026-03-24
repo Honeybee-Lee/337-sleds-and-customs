@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resendApiKey = process.env.RESEND_API_KEY;
-const contactEmail = process.env.CONTACT_EMAIL;
+const contactEmail = process.env.CONTACT_EMAIL as string;
 
 // Runtime checks
 if (!resendApiKey) throw new Error("RESEND_API_KEY is not defined");
@@ -33,7 +33,7 @@ export async function POST(req: Request) {
       from: "Contact Form <onboarding@resend.dev>", // update to your domain later
       to: contactEmail,
       subject: `New message from ${name}`,
-      reply_to: email,
+      replyTo: email,
       text: `
 Name: ${name}
 Email: ${email}
