@@ -82,21 +82,27 @@ export default function Contact() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+          {/* LEFT COLUMN: Shop info + Map */}
           <div className="space-y-8">
+
+            {/* Shop Info Card */}
             <div className="bg-zinc-900/50 border border-white/5 p-8 rounded-xl backdrop-blur-sm">
               <h3 className="font-display font-bold text-2xl text-white mb-6 uppercase">Shop Info</h3>
-              
               <div className="space-y-6">
+                {/* Location */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
                     <h4 className="font-mono font-bold text-white uppercase tracking-wider mb-1">Location</h4>
-                    <p className="text-zinc-400" data-testid="text-address">200 E North Ave.<br />Tonkawa, OK 74653</p>
+                    <p className="text-zinc-400" data-testid="text-address">
+                      200 E North Ave.<br />Tonkawa, OK 74653
+                    </p>
                   </div>
                 </div>
 
+                {/* Phone */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <Phone className="w-6 h-6" />
@@ -107,6 +113,7 @@ export default function Contact() {
                   </div>
                 </div>
 
+                {/* Email */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <Mail className="w-6 h-6" />
@@ -117,54 +124,41 @@ export default function Contact() {
                   </div>
                 </div>
 
+                {/* Hours */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-primary/10 rounded-lg text-primary">
                     <Clock className="w-6 h-6" />
                   </div>
                   <div>
                     <h4 className="font-mono font-bold text-white uppercase tracking-wider mb-1">Hours</h4>
-                    <p className="text-zinc-400" data-testid="text-hours">Mon - Fri: 8:00 AM - 6:00 PM<br />Sat: 9:00 AM - 2:00 PM</p>
+                    <p className="text-zinc-400" data-testid="text-hours">
+                      Mon - Fri: 8:00 AM - 6:00 PM<br />Sat: 9:00 AM - 2:00 PM
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
+            {/* Map Card */}
+            <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
               <img 
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1748&auto=format&fit=crop" 
                 alt="Map location"
                 className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <Button variant="secondary" className="shadow-xl" data-testid="button-open-maps">Open in Maps</Button>
+                <a
+                  href="https://www.google.com/maps?q=200+E+North+Ave+Tonkawa+OK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="secondary" className="shadow-xl" data-testid="button-open-maps">
+                    Open in Maps
+                  </Button>
+                </a>
               </div>
             </div>
-          </div> */}
 
-            {/* SECOND COLUMN START */}
-            <div className="space-y-8">
-              <div className="h-64 bg-zinc-800 rounded-xl overflow-hidden border border-white/5 relative group">
-            <img 
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1748&auto=format&fit=crop" 
-              alt="Map location"
-              className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500"
-            />
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <a
-                href="https://www.google.com/maps/place/200+E+North+Ave,+Tonkawa,+OK+74653/@36.6812148,-97.3109495,17z/data=!3m1!4b1!4m6!3m5!1s0x87b0430756798c3d:0xbd8396d78102ee3c!8m2!3d36.6812105!4d-97.3083746!16s%2Fg%2F11mcj2kjwq?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="secondary"
-                  className="shadow-xl"
-                  data-testid="button-open-maps"
-                >
-                  Open in Maps
-                </Button>
-              </a>
-            </div>
           </div>
 
           <div className="bg-zinc-900 border border-white/10 p-8 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden">
@@ -261,6 +255,5 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>)}
+      </div>
+    )}
