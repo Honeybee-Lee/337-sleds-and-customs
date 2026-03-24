@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resendApiKey = process.env.RESEND_API_KEY;
+const resendApiKey = process.env.RESEND_API_KEY as string;
 const contactEmail = process.env.CONTACT_EMAIL as string;
 
 // Runtime checks
