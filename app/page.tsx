@@ -41,7 +41,7 @@ export default function Home() {
           >
             <div className="inline-block px-4 py-1 mb-6 border border-primary/30 rounded-full bg-black/40 backdrop-blur-sm">
               <span className="text-primary font-mono text-xs md:text-sm font-bold tracking-widest uppercase">
-                Premium Motorcycle & Engine Repair
+                Premium Motorcycle & Small Engine Repair • Tonkawa, OK
               </span>
             </div>
             
@@ -54,7 +54,7 @@ export default function Home() {
 
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-300 font-body mb-10 leading-relaxed">
               Expert service for the ride of your life. Specializing in motorcycle maintenance, 
-              custom modifications, and small engine repair.
+              custom modifications, and small engine repair serving Tonkawa, Ponca City, Kay Country and surrounding areas.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
