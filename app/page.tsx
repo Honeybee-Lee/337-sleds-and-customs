@@ -54,7 +54,7 @@ export default function Home() {
 
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-300 font-body mb-10 leading-relaxed">
               Expert service for the ride of your life. Specializing in motorcycle maintenance, 
-              custom modifications, and small engine repair serving Tonkawa, Ponca City, Kay Country and surrounding areas.
+              custom modifications, and small engine repair serving Tonkawa, Ponca City, Kay County and surrounding areas.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
