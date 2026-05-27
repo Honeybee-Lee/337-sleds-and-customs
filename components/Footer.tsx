@@ -24,6 +24,7 @@ export function Footer() {
             <p className="text-zinc-400 max-w-md font-body leading-relaxed">
               Precision motorcycle repair and custom builds. From standard maintenance to high-performance modifications, we treat every bike like our own.
             </p>
+            <p className="text-zinc-500 max-w-md font-body leading-relaxed mt-4">Serving Tonkawa, Kay County, and Northern Oklahoma with motorcycle, ATV, and small engine repair services.</p>
           </div>
 
           <div>
