@@ -79,7 +79,7 @@ const mockServices = [
     description: "Expert carburetor service to fix starting issues, rough idling, and poor performance.",
     category: "motorcycle",
     price: "$120",
-    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=800",
+    image: "/images/carburetor.jpg",
   },
   {
     id: 3,
