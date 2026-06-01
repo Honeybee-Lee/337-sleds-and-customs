@@ -39,16 +39,16 @@ const mockServices = [
     image:
       "/images/recent_project3.jpg",
   },
-  {
-    id: "5",
-    title: "Diagnostics",
-    description:
-      "Advanced electrical and mechanical diagnostics to identify hard-to-find issues.",
-    category: "motorcycle",
-    // price: "$90",
-    image:
-      "https://images.unsplash.com/photo-1626848206412-25e172a8c386?auto=format&fit=crop&q=80&w=800",
-  },
+  // {
+  //   id: "5",
+  //   title: "Diagnostics",
+  //   description:
+  //     "Advanced electrical and mechanical diagnostics to identify hard-to-find issues.",
+  //   category: "motorcycle",
+  //   // price: "$90",
+  //   image:
+  //     "https://images.unsplash.com/photo-1626848206412-25e172a8c386?auto=format&fit=crop&q=80&w=800",
+  // },
   // =========================
   // SMALL ENGINE
   // =========================
@@ -60,7 +60,7 @@ const mockServices = [
     category: "small-engine",
     // price: "$100",
     image:
-      "https://images.unsplash.com/photo-1590634213602-230b5e297837?auto=format&fit=crop&q=80&w=800",
+      "/images/lawn-mower-engine.jpg",
   },
   // =========================
   // ATV
