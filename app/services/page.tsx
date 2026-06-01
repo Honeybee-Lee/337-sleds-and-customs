@@ -12,13 +12,15 @@ import { type Service } from "@/shared/schema";
 export default function Services() {
   const { data: services, isLoading } = useQuery<Service[]>({
     queryKey: ["/api/services"],
+    // becomes queryKey: ["/api/services", filter] if we later move to filtering server-side
     queryFn: async () => {
       const res = await fetch("/api/services");
       if (!res.ok) throw new Error("Failed to fetch services");
       return res.json();
     },
   });
-  const [filter, setFilter] = useState<'all' | 'motorcycle' | 'small-engine'>('all');
+  type ServiceCategory = "all" | "motorcycle" | "atv" | "utv" | "small-engine";
+  const [filter, setFilter] = useState<ServiceCategory>("all");
   const [search, setSearch] = useState('');
 
   const filteredServices = services?.filter(s => {
@@ -42,6 +44,8 @@ export default function Services() {
             {[
               { id: 'all', label: 'All Services' },
               { id: 'motorcycle', label: 'Motorcycles' },
+              { id: "atv", label: "ATVs" },
+              { id: "utv", label: "Side-by-Sides" },
               { id: 'small-engine', label: 'Small Engines' }
             ].map((tab) => (
               <button
