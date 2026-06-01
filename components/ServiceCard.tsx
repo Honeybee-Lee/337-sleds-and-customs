@@ -9,6 +9,20 @@ interface ServiceCardProps {
   index: number;
 }
 
+const CATEGORY_LABELS: Record<string, string> = {
+  motorcycle: "MOTO",
+  atv: "ATV",
+  utv: "UTV",
+  "small-engine": "SMALL ENGINE",
+};
+
+const CATEGORY_STYLE: Record<string, string> = {
+  motorcycle: "text-primary border-primary",
+  atv: "text-green-400 border-green-500",
+  utv: "text-blue-400 border-blue-500",
+  "small-engine": "text-zinc-400 border-zinc-600",
+};
+
 export function ServiceCard({ service, index }: ServiceCardProps) {
   const Icon = service.category === "motorcycle" ? Zap : Wrench;
 
@@ -33,12 +47,10 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
           
           <div className="absolute top-4 right-4 z-20">
             <span className={`
-              px-3 py-1 text-xs font-mono font-bold uppercase rounded-sm border 
-              ${service.category === 'motorcycle' 
-                ? 'text-primary border-primary bg-black/80' 
-                : 'text-zinc-400 border-zinc-600 bg-black/80'}
+              px-3 py-1 text-xs font-mono font-bold uppercase rounded-sm border bg-black/80
+              ${CATEGORY_STYLE[service.category] ?? "text-zinc-400 border-zinc-600"}
             `}>
-              {service.category === 'motorcycle' ? 'Moto' : 'Small Engine'}
+              {CATEGORY_LABELS[service.category] ?? service.category}
             </span>
           </div>
         </div>
