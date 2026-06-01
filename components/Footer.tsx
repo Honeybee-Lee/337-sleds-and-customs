@@ -32,6 +32,7 @@ export function Footer() {
             <ul className="space-y-3 font-mono text-sm">
               <li><Link href="/" className="text-zinc-400 hover:text-primary transition-colors" data-testid="link-footer-home">Home</Link></li>
               <li><Link href="/services" className="text-zinc-400 hover:text-primary transition-colors" data-testid="link-footer-services">Services</Link></li>
+              <li><Link href="/projects" className="text-zinc-400 hover:text-primary transition-colors" data-testid="link-footer-projects">Recent Projects</Link></li>
               <li><Link href="/parts" className="text-zinc-400 hover:text-primary transition-colors" data-testid="link-footer-parts">Parts Shop</Link></li>
               <li><Link href="/contact" className="text-zinc-400 hover:text-primary transition-colors" data-testid="link-footer-contact">Contact Us</Link></li>
             </ul>
