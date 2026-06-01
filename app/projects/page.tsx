@@ -4,12 +4,20 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuery } from "@tanstack/react-query";
-import { type Project } from "@/shared/schema";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
 const CATEGORIES = ["All", "Custom Build", "Restoration", "Performance", "Small Engine"];
+
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  image: string;
+  completedAt: string;
+};
 
 export default function Projects() {
   const { data: projects, isLoading } = useQuery<Project[]>({
