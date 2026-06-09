@@ -82,6 +82,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-8 bg-black">
+        <div className="max-w-4xl mx-auto px-4">
+          <img
+            src="/images/bike_night.png"
+            alt="Bike Night Flyer"
+            className="w-full rounded-lg border border-zinc-800 shadow-lg"
+          />
+        </div>
+      </section>
+
       <div className="bg-primary py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-between items-center gap-4 text-black font-mono font-bold uppercase text-sm md:text-base tracking-widest">
